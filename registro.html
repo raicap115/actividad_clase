@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrar una nueva cuenta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Formulario de contacto</h1>
-    <p>Gracias por contactarnos.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ut voluptate voluptas sit id dolorum, adipisci dolor iure nisi quia ullam exercitationem sequi, laborum saepe, nobis repellat animi! Hic, dolor.</p>  
+    <div class="container">
+    <form action="inicio_sesion.html" method="POST">
+        <h1>Regístrate</h1>
+        <div class="form-group">
+            <label for="np">Nombre completo del padre:</label>   
+            <input type="text" name="nombre_padre" id="np" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="nm">Nombre completo de la madre:</label>   
+            <input type="text" name="nombre_madre" id="nm" required class="form-control">
+        </div>
+        <div class="form-group">
+            Correo: <input type="email" name="correo" id="" required class="form-control">
+        </div>
+        <div class="form-group">
+            Contraseña: <input type="password" name="contraseña" id="" required class="form-control">
+        </div>
+        <h3>Datos del estudiante</h3>
+        <div class="form-group">
+            <label for="ne">Nombre completo del estudiante:</label>   
+            <input type="text" name="nombre_estudiante" id="nc" required class="form-control">
+        </div>
+        <div class="form-group">
+            Nivel:
+            <select name="nivel" id="" class="form-control">
+                <option value="1">Incial</option>
+                <option value="1">Primaria</option>
+                <option value="1">Secundaria</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="g">Grado:</label>
+            <input type="text" name="grado" id="g" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="s">Sección:</label>
+            <input type="text" name="seccion" id="s" class="form-control">
+        </div>
+        <button>Enviar formulario</button>
+    </form>
+    </div>
 </body>
 </html>
